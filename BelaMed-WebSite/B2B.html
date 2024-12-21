@@ -92,6 +92,25 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
         }
+.platform-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    padding-bottom: 4rem; 
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .platform-description {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+        padding-bottom: 3rem; 
+    }
+}
     </style>
 </head>
 
@@ -156,7 +175,7 @@
 <div class="container-xxl py-5">
     <div class="container px-lg-5">
         <div>
-            <p class="text-center animated slideInLeft"><strong>B2B E-commerce Platform for Medical Equipment</strong> is designed to revolutionize the medical equipment market in Ethiopia. By connecting medical equipment suppliers and healthcare providers, the platform streamlines the procurement process, reduces costs, and enhances access to quality medical technology.</p>
+            <p class="text-center animated slideInLeft platform-description"><strong>B2B E-commerce Platform for Medical Equipment</strong> is designed to revolutionize the medical equipment market in Ethiopia. By connecting medical equipment suppliers and healthcare providers, the platform streamlines the procurement process, reduces costs, and enhances access to quality medical technology.</p>
         </div>
         <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3">Value Proposition for Key Actors</h1>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coming Soon - BelaMed</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #008E87;
+            --secondary: #EC7346;
+            --light: #F2F2F2;
+            --dark: #1D2833;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+        }
+
+        .coming-soon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            background:
+                linear-gradient(
+                    rgba(0, 142, 135, 0.9), 
+                    rgba(236, 115, 70, 0.9)
+                ),
+                url("img/bg-round.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .coming-soon h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: var(--light);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .coming-soon p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--light);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .coming-soon .btn-primary {
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--light);
+            background: var(--secondary);
+            border: 2px solid var(--light);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .coming-soon .btn-primary:hover {
+            background: var(--light);
+            color: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .coming-soon .highlight {
+            color: var(--secondary);
+        }
+
+        .coming-soon .social-icons a {
+            margin: 0 10px;
+            font-size: 1.8rem;
+            color: var(--light);
+            transition: color 0.3s ease;
+        }
+
+        .coming-soon .social-icons a:hover {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coming-soon">
+        <h1 class="animated fadeIn">Coming <span class="highlight">Soon</span></h1>
+        <p class="animated fadeIn delay-1s">We are working hard to launch something <span class="highlight">amazing</span>. Stay tuned for updates!</p>
+        <div class="animated fadeIn delay-2s">
+            <a href="index.html" class="btn btn-primary">Go Back Home</a>
+        </div>
+        <div class="social-icons mt-4 animated fadeIn delay-3s">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

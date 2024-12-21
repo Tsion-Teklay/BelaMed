@@ -173,10 +173,6 @@ h6,
     }
 }
 
-
-
-
-
 /*** Hero Header ***/
 .hero-header {
     background:
@@ -254,36 +250,36 @@ h6,
 }
 
 
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
+/*** principle ***/
+.principle-carousel .owl-item .principle-item,
+.principle-carousel .owl-item.center .principle-item * {
     transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
+.principle-carousel .owl-item.center .principle-item {
     background: var(--primary) !important;
     border-color: var(--secondary) !important;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item .position-absolute {
+.principle-carousel .owl-item.center .principle-item .position-absolute {
     background: var(--secondary) !important;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item * {
+.principle-carousel .owl-item.center .principle-item * {
     color: #FFFFFF;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item h6 {
+.principle-carousel .owl-item.center .principle-item h6 {
     color: var(--dark) !important;
 }
 
-.testimonial-carousel .owl-dots {
+.principle-carousel .owl-dots {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
+.principle-carousel .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -294,14 +290,14 @@ h6,
     transition: .5s;
 }
 
-.testimonial-carousel .owl-dot.active {
+.principle-carousel .owl-dot.active {
     width: 30px;
     background: var(--primary);
 }
 
 
 /*** Team ***/
-.team-item,
+/* .team-item,
 .team-item .bg-primary,
 .team-item .bg-primary i {
     transition: .5s;
@@ -317,7 +313,7 @@ h6,
 
 .team-item:hover .bg-primary i {
     color: var(--secondary) !important;
-}
+} */
 
 
 /*** Footer ***/
@@ -417,6 +413,13 @@ h6,
   }
 .secondary-border {
     border-color: #EC7346 !important; /* Replace with your color */
-  }
+}
+
+.primary-text {
+    color: #008E87;
+}
+.secondary-text {
+    color: #EC7346;
+}
 
 

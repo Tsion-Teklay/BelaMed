@@ -40,8 +40,22 @@
     });
     
     
-    
-    
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.nav-item.nav-link');
+        
+        const currentPage = window.location.pathname.split("/").pop();
+        
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+                link.classList.add('active'); 
+            } else {
+                link.classList.remove('active'); 
+            }
+        });
+    });
+
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
@@ -91,8 +105,8 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    // principles carousel
+    $(".principle-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         margin: 25,

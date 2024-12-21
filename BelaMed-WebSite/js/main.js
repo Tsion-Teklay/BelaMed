@@ -42,9 +42,12 @@
     
     document.addEventListener("DOMContentLoaded", function () {
         const navLinks = document.querySelectorAll('.nav-item.nav-link');
+        const dropdownLinks = document.querySelectorAll('.dropdown-item');
         
+        // Get the current page
         const currentPage = window.location.pathname.split("/").pop();
-        
+    
+        // Set active class for main nav links
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
             if (href === currentPage) {
@@ -53,7 +56,21 @@
                 link.classList.remove('active'); 
             }
         });
+    
+        // Set active class for dropdown items and parent dropdown
+        dropdownLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage) {
+                link.classList.add('active'); 
+                // Add active class to parent dropdown link
+                const parentDropdown = link.closest('.nav-item.dropdown').querySelector('.nav-link');
+                parentDropdown.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
     });
+    
 
 
     // Dropdown on mouse hover

@@ -18,12 +18,28 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
+        // Check if screen width is larger than 992px
+        if ($(window).width() >= 992) {
+            if ($(this).scrollTop() > 45) {
+                $('.navbar').addClass('sticky-top shadow-sm');
+                $('#mainlogo').attr('src', 'img/green belaMed logo.png'); // Green logo for scrolling
+            } else {
+                $('.navbar').removeClass('sticky-top shadow-sm');
+                $('#mainlogo').attr('src', 'img/belaMed logo.png'); // White logo for top of the page
+            }
         }
     });
+    
+    // Ensure the logo is always green on smaller screens
+    $(window).on('resize load', function () {
+        if ($(window).width() < 992) {
+            $('#mainlogo').attr('src', 'img/green belaMed logo.png'); // Green logo for smaller screens
+        } else {
+            $('#mainlogo').attr('src', 'img/belaMed logo.png'); // Default white logo for larger screens
+        }
+    });
+    
+    
     
     
     // Dropdown on mouse hover

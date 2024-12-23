@@ -22,7 +22,7 @@
         if ($(window).width() >= 992) {
             if ($(this).scrollTop() > 45) {
                 $('.navbar').addClass('sticky-top shadow-sm');
-                $('#mainlogo').attr('src', 'img/green belaMed logo.png'); // Green logo for scrolling
+                $('#mainlogo').attr('src', 'img/blue belaMed logo.png'); // Green logo for scrolling
             } else {
                 $('.navbar').removeClass('sticky-top shadow-sm');
                 $('#mainlogo').attr('src', 'img/belaMed logo.png'); // White logo for top of the page
@@ -33,7 +33,7 @@
     // Ensure the logo is always green on smaller screens
     $(window).on('resize load', function () {
         if ($(window).width() < 992) {
-            $('#mainlogo').attr('src', 'img/green belaMed logo.png'); // Green logo for smaller screens
+            $('#mainlogo').attr('src', 'img/blue belaMed logo.png'); // Green logo for smaller screens
         } else {
             $('#mainlogo').attr('src', 'img/belaMed logo.png'); // Default white logo for larger screens
         }
@@ -124,24 +124,25 @@
 
     // principles carousel
     $(".principle-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
+        autoplay: true,                // Enable auto-slide
+        autoplayTimeout: 2000,         // Time between each slide (3000 ms = 3 seconds)
+        smartSpeed: 500,               // Speed of the transition (500 ms = 0.5 seconds)
         margin: 25,
         dots: true,
         loop: true,
         center: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             }
         }
     });

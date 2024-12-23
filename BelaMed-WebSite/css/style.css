@@ -1,12 +1,11 @@
 /********** Template CSS **********/
 :root {
-    --primary: #008E87;
-    --secondary: #EC7346;
+    --primary: #0A0813;
+    --secondary: #A8A6B2;
     --light: #F2F2F2;
     --dark: #1D2833;
     
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -29,6 +28,20 @@
     bottom: 45px;
     z-index: 99;
 }
+
+/* Change background color when a dropdown item is active */
+.dropdown-item.active {
+    background-color: #0A0813 !important;  /* Green background */
+    color: white !important;  /* Ensure text color is white */
+}
+
+/* Change background color when a dropdown item is focused (clicked) */
+.dropdown-item:focus, 
+.dropdown-item:hover {
+    background-color: #A8A6B2 !important;  /* Orange background */
+    color: white !important;  /* Ensure text color is white */
+}
+
 
 
 /*** Heading ***/
@@ -88,7 +101,6 @@ h6,
     font-weight: normal;
     border-radius: 8px;
 }
-
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
@@ -295,27 +307,6 @@ h6,
     background: var(--primary);
 }
 
-
-/*** Team ***/
-/* .team-item,
-.team-item .bg-primary,
-.team-item .bg-primary i {
-    transition: .5s;
-}
-
-.team-item:hover {
-    border-color: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary {
-    background: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary i {
-    color: var(--secondary) !important;
-} */
-
-
 /*** Footer ***/
 .footer {
     background:
@@ -400,26 +391,23 @@ h6,
     border-right: none;
 }
 
-
 .primary-bg{
-    background-color: #008E87;
+    background-color: #0A0813;
 }
 .secondary-bg{
-    background-color: #EC7346;
+    background-color: #A8A6B2;
 }
 
 .primary-border {
-    border-color: #008E87 !important; /* Replace with your color */
+    border-color: #0A0813 !important; /* Replace with your color */
   }
 .secondary-border {
-    border-color: #EC7346 !important; /* Replace with your color */
+    border-color: #A8A6B2 !important; /* Replace with your color */
 }
 
 .primary-text {
-    color: #008E87;
+    color: #0A0813;
 }
 .secondary-text {
     color: #EC7346;
 }
-
-

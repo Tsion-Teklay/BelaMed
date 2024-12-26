@@ -296,13 +296,45 @@
                     
                     <div class="col-md-6 col-lg-4 mt-lg-n5">
                         <form method="POST" action="php/form.php" class="php-email-form" id="form">
-                        <div class="bg-light rounded" style="padding: 30px;">
-                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
-                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
-                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
-                            <button class="btn primary-bg text-white w-100 py-2">Send Message</button>
-                        </div>
-                        <form method="POST" action="php/form.php" class="php-email-form" id="form">
+                            <div class="bg-light rounded" style="padding: 30px;">
+                                <!-- Form inputs -->
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    class="form-control border-0 py-2 mb-2" 
+                                    placeholder="Name"
+                                    required
+                                >
+                                
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    class="form-control border-0 py-2 mb-2" 
+                                    placeholder="Email"
+                                    required
+                                >
+                                
+                                <textarea 
+                                    name="message" 
+                                    id="message" 
+                                    class="form-control border-0 mb-2" 
+                                    rows="2" 
+                                    placeholder="Message"
+                                    required
+                                ></textarea>
+                        
+                                <!-- Error and success messages -->
+                                <div id="error-msg" class="d-none text-danger mb-2"></div>
+                                <div class="main-error d-none text-danger mb-2">Please fix the errors above.</div>
+                                <div class="sent-message d-none text-success mb-2">Your message has been sent!</div>
+                        
+                                <!-- Submit button -->
+                                <button class="btn primary-bg text-white w-100 py-2">Send Message</button>
+                            </div>
+                        </form>
+                        
                     </div>
                
                 </div>

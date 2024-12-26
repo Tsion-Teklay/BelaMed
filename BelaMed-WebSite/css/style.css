@@ -411,3 +411,19 @@ h6,
 .secondary-text {
     color: #EC7346;
 }
+
+.error {
+    color: #dc3545 !important; 
+    background-color: rgba(220, 53, 69, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sent-message {
+    color: #198754 !important; 
+    background-color: rgba(25, 135, 84, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}

@@ -19,7 +19,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = 'nuniyat.g@gmail.com';
+$mail->Username   = 'Contact@belamed.net';
 $mail->Password   = 'f d m x j p g w z d k j j a l k';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port       = 587;
